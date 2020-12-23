@@ -15,12 +15,19 @@ pipeline {
         stage('test') {
             steps {
                 echo 'Testing the application'
+                sh 'mvn surefire:test'
+                sh 'mvn failsafe:integration-test'
             }
         }
         stage('deploy') {
             steps {
                 echo 'Deploying the application'
             }
+        }
+    }
+    post {
+        always {
+            junit 'target/surefire-reports/TEST-*.xml'
         }
     }
 }
