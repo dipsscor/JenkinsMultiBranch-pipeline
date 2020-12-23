@@ -20,7 +20,18 @@ Configure Usename/password in global credentials
     3. Add regular expression for branch filtering:
         ^dev|master|feature.*$
         
+#### Add OpenJDK and Maven Plugins
+    Click "Manage Jenkins" > "Global Tool Configuration" > "Add JDK" (near JDK installations)
 
+    Delete the java.sun.com installer. Just click "Add Installer" below and choose "Extract .zip/.tar.gz"
+
+    Enter following:
+
+    Label: openjdk-11
+
+    Download URL: https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz
+
+    Subdirectory of extracted archive: jdk-11.0.1 
     
 
  
