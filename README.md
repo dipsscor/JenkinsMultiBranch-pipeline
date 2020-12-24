@@ -1,5 +1,14 @@
 # Jenkins MultiBranch Pipeline
-This is Demonstration project for Multibranch pipelines using JenkinsFile (Pipeline as code)
+This is Demonstration project for Multibranch pipelines using JenkinsFile (Pipeline as code). We have created following branches:
+    master (default)
+    dev
+    feature-1
+    feature-2
+    bug-fx
+    
+ The jenkinsfile are available only of the dev and master branches so those job will only show up in jenkins.
+ also the regular experisson matches for dev or master or feature branches only. The bug-fix branch is not included in the build.
+    
 
 
 # Jenkins Setup:
